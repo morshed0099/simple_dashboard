@@ -34,7 +34,7 @@ const AnalysisCard = ({ progress, share, content, lineprogess }) => {
             </div>
             {
                 lineprogess && (
-                    <div className='mt-12'>
+                    <div className='mt-16'>
                         <progress className="progress progress-info w-56" value={0} max="100"></progress>
                         <progress className="progress progress-info w-56" value="10" max="100"></progress>
                         <progress className="progress progress-info w-56" value="40" max="100"></progress>

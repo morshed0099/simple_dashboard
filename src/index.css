@@ -21,4 +21,14 @@ h6 {
   color:rgb(102, 99, 99)
 
 }
+.recharts-dot{
+  width: 5px !important;
+  height: 5px !important;
+  border: 2px solid black !important;
+}
+.recharts-dot-active{
+  width: 5px !important;
+  height: 5px !important;
+  border: 2px solid black !important;
+}
 

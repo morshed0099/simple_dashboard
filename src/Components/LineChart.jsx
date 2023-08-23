@@ -1,5 +1,5 @@
 import React from 'react';
-import { Area, AreaChart, CartesianGrid,  ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, CartesianGrid,  Legend,  ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const LineChart = () => {
     const data = [
@@ -53,15 +53,13 @@ const LineChart = () => {
           height={400}
           data={data}
           margin={{
-            top: 10,
-            right: 30,
-            left: 0,
             bottom: 0,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
+          <Legend verticalAlign="top" height={36}/>
           <Tooltip />
           <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
         </AreaChart>

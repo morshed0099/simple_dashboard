@@ -3,6 +3,7 @@ import AnalysisCard from '../Components/AnalysisCard';
 import LineChart from '../Components/LineChart';
 import Analysis from '../Components/Analysis';
 import Barchar from '../Components/Barchar';
+import Radarchart from '../Components/Radarchart';
 
 const Home = () => {
     const [active, setactive] = useState('week')
@@ -21,14 +22,23 @@ const Home = () => {
                     </div>
                     <LineChart />
                 </div>
-                
+                <div className='mt-8'>
+                    <AnalysisCard lineprogess={true} share={400} />
+                </div>
+
             </div>
 
-            <div className='p-4 rounded-md min-h-screen bg-gray-200'>
-               <div>
-                <h2 className='text-2xl font-bold mb-4'>Daily Chart</h2>
-                <Barchar />
-               </div>
+
+            {/* side menu  */}
+            <div className='p-4 rounded-md min-h-screen '>
+                <div>
+                    <h2 className='text-2xl font-bold  mb-4'>Daily Chart</h2>
+                    <Barchar />
+                </div>
+                <div>
+                    <h2 className='text-2xl font-bold mt-8 mb-4'>Daily Chart</h2>
+                    <Radarchart />
+                </div>
             </div>
         </div>
     );
