@@ -5,7 +5,7 @@ import Analysis from './Analysis';
 const AnalysisCard = ({ progress, share, content, lineprogess }) => {
     const [active, setactive] = useState('week')
     return (
-        <div className={`p-4  rounded-2xl shadow-sm hover:scale-105 duration-500 border ${lineprogess ? 'flex gap-4' : ''}`}>
+        <div className={`p-4  rounded-2xl shadow-sm hover:scale-105 duration-500 border ${lineprogess ? 'flex gap-4 lg:flex-row flex-col' : ''}`}>
             <div>
                 <Analysis setactive={setactive} active={active} />
                 <div className={`${progress ? 'flex flex-row-reverse mt-6 justify-between gap-2' : 'mt-6'}`}>
@@ -34,13 +34,12 @@ const AnalysisCard = ({ progress, share, content, lineprogess }) => {
             </div>
             {
                 lineprogess && (
-                    <div className='mt-16'>
-                        <progress className="progress progress-info w-56" value={0} max="100"></progress>
-                        <progress className="progress progress-info w-56" value="10" max="100"></progress>
-                        <progress className="progress progress-info w-56" value="40" max="100"></progress>
-                        <progress className="progress progress-info w-56" value="70" max="100"></progress>
-                        <progress className="progress progress-info w-56" value="100" max="100"></progress>
-
+                    <div className='lg:mt-16 mt-2 flex w-full flex-col gap-2'>
+                        <progress className="progress progress-info w-full" value={0} max="100"></progress>
+                        <progress className="progress progress-info w-full" value="10" max="100"></progress>
+                        <progress className="progress progress-info w-full" value="40" max="100"></progress>
+                        <progress className="progress progress-info w-full" value="70" max="100"></progress>
+                        <progress className="progress progress-info w-full" value="100" max="100"></progress>
                     </div>
                 )
             }

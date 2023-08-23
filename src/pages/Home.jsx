@@ -24,6 +24,7 @@ const Home = () => {
                     </div>
                     <LineChart />
                 </div>
+                
                 <div className='mt-8 flex-col flex lg:flex-row gap-4'>
                     <div className='lg:flex-1 w-full'>
                         <AnalysisCard lineprogess={true} share={400} />
