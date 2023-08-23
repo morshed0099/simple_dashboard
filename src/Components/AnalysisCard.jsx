@@ -12,7 +12,7 @@ const AnalysisCard = ({ progress, share, content, lineprogess }) => {
                     <div className={`${progress ? 'w-2/3' : 'w-full'}`}>
                         <div>
                             <div>
-                                <p className='letter font-light'>02 ipsum dolor sit amet consectetur adipisicing elit. Animi harum eius, voluptate accusantium consequuntur nihil recusandae voluptatum temporibus officia ipsum?</p>
+                                <p className='letter font-light'>02 ipsum dolor sit amet consectetur adipisicing elit. Animi harum eius, voluptate accusantium consequuntur</p>
                             </div>
 
                         </div>
