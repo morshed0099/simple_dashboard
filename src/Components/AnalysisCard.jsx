@@ -8,8 +8,8 @@ const AnalysisCard = ({ progress, share, content, lineprogess }) => {
         <div className={`p-4  rounded-2xl shadow-sm hover:scale-105 duration-500 border ${lineprogess ? 'flex gap-4' : ''}`}>
             <div>
                 <Analysis setactive={setactive} active={active} />
-                <div className='flex flex-row-reverse mt-6 justify-between gap-2'>
-                    <div className={`${progress ?'w-2/3':'w-full'}`}>
+                <div className={`${progress ? 'flex flex-row-reverse mt-6 justify-between gap-2' : 'mt-6'}`}>
+                    <div className={`${progress ? 'w-2/3' : 'w-full'}`}>
                         <div>
                             <div>
                                 <p className='letter font-light'>02 ipsum dolor sit amet consectetur adipisicing elit. Animi harum eius, voluptate accusantium consequuntur nihil recusandae voluptatum temporibus officia ipsum?</p>
@@ -34,8 +34,13 @@ const AnalysisCard = ({ progress, share, content, lineprogess }) => {
             </div>
             {
                 lineprogess && (
-                    <div>
-                        dfasfjalkfjlajflafjlaf
+                    <div className='mt-12'>
+                        <progress className="progress progress-info w-56" value={0} max="100"></progress>
+                        <progress className="progress progress-info w-56" value="10" max="100"></progress>
+                        <progress className="progress progress-info w-56" value="40" max="100"></progress>
+                        <progress className="progress progress-info w-56" value="70" max="100"></progress>
+                        <progress className="progress progress-info w-56" value="100" max="100"></progress>
+
                     </div>
                 )
             }
