@@ -35,11 +35,11 @@ const AnalysisCard = ({ progress, share, content, lineprogess }) => {
             {
                 lineprogess && (
                     <div className='lg:mt-16 mt-2 flex w-full flex-col gap-2'>
-                        <progress className="progress progress-info w-full" value={0} max="100"></progress>
-                        <progress className="progress progress-info w-full" value="10" max="100"></progress>
-                        <progress className="progress progress-info w-full" value="40" max="100"></progress>
-                        <progress className="progress progress-info w-full" value="70" max="100"></progress>
-                        <progress className="progress progress-info w-full" value="100" max="100"></progress>
+                        <progress className="progress progress-info w-full md:w-56" value={0} max="100"></progress>
+                        <progress className="progress progress-info w-full md:w-56" value="10" max="100"></progress>
+                        <progress className="progress progress-info w-full md:w-56" value="40" max="100"></progress>
+                        <progress className="progress progress-info w-full md:w-56" value="70" max="100"></progress>
+                        <progress className="progress progress-info w-full md:w-56" value="100" max="100"></progress>
                     </div>
                 )
             }
